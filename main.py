@@ -1,12 +1,8 @@
 import numpy as np
 import streamlit as st
-from st_audiorec import st_audiorec
 from backend import Recognizer
 from audiorecorder import audiorecorder
 
-from io import BytesIO
-import soundfile as sf
-from pydub import effects
 
 
 def main():
