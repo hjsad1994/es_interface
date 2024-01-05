@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package emotion_speech.v1;
+
+
+service EmotionSpeechService {
+    rpc RecognizeEmotion (AudioRequest) returns (EmotionResponse){
+    }
+}
+
+message AudioRequest{
+    bytes audio = 1;
+}
+
+message EmotionResponse{
+    string emotion = 1;
+}
