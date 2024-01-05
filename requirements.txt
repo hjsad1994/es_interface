@@ -4,3 +4,4 @@ ffmpeg==1.4
 grpcio==1.59.0
 grpcio-tools==1.59.0
 ffprobe-python
+ffmpeg-downloader
