@@ -1,3 +1,4 @@
 streamlit-audiorecorder
 ffmpeg-python==0.2.0
-grpc
+grpcio
+grpcio-tools
