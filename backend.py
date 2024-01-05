@@ -7,7 +7,7 @@ from emotion_types.emotion_speech_service_pb2_grpc import EmotionSpeechServiceSt
 class Recognizer:
     def __init__(self):
         
-        self.channel = grpc.insecure_channel('[::]:5002')
+        self.channel = grpc.insecure_channel(f'[::]:5002')
         self.stub = EmotionSpeechServiceStub(self.channel)
         
     def run(self, audio):

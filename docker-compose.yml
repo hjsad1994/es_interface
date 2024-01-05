@@ -1,0 +1,17 @@
+services:
+  es-interface:
+    build: .
+    image: es_interface:latest
+    ports:
+      - "${ES_INTERFACE_PORT:-8501}:${ES_INTERFACE_PORT_DOCKER:-8501}"
+    volumes:
+      - ./emotion-speech-demo:/src/emotion-speech-demo
+
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 2G
+        reservations:
+          cpus: '0.01'
+          memory: 100MB

@@ -3,5 +3,5 @@ ffmpeg-python==0.2.0
 ffmpeg==1.4
 grpcio==1.59.0
 grpcio-tools==1.59.0
-ffprobe-python
-ffmpeg-downloader
+pydub==0.25.1
+Pygments==2.17.2
